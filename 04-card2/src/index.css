@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: black;
+  color: white;
+}
+.jobs-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px;
+  background: blue;
+  min-height: 80vh;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card-container {
+  height: 400px;
+  background: white;
+  border-radius: 20px;
+}
+
+.status-payment {
+  display: flex;
+}
+.status {
+  background-color: red;
+}
+.payment {
+  background-color: rebeccapurple;
+}
