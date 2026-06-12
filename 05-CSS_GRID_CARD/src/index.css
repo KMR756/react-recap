@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: black;
+  color: white;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.job_section {
+  background-color: rgb(236, 111, 111);
+  margin-top: 10px;
+  min-height: 70vh;
+  padding: 40px;
+  border-radius: 20px 20px 40px 40px;
+}
+
+.card {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.card-container {
+  height: 400px;
+  background: rgb(112, 166, 216);
+  border-radius: 20px;
+}
+.header-section {
+  background-color: rgb(130, 130, 214);
+  min-height: 20vh;
+  padding: 30px;
+  border-radius: 40px 40px 20px 20px;
+}
+.another-card h1 {
+  font-size: clamp(2.5rem, 2.5vw, 10rem);
+}
+.footer-section {
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  margin-top: 20px;
+  min-height: 20vh;
+  border-radius: 20px;
+  display: flex;
+}
+.footer-section h1 {
+  color: black;
+  font-size: clamp(2.5rem, 2.5vw, 10rem);
+}
