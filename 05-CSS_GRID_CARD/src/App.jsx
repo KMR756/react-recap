@@ -1,5 +1,7 @@
-import AnotherCard from "./components/AnotherCard"
-import Card from "./components/Card"
+
+import AnotherCard from "./components/anotherCard/AnotherCard"
+import Card from "./components/card/Card"
+
 import Footer from "./components/Footer"
 
 

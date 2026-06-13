@@ -26,11 +26,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
-.card-container {
-  height: 400px;
-  background: rgb(112, 166, 216);
-  border-radius: 20px;
-}
 .header-section {
   background-color: rgb(130, 130, 214);
   min-height: 20vh;
