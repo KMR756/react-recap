@@ -1,25 +1,49 @@
 import useFetch from "../hooks/useFetch";
 import Loader from "./Loader";
 import ErrorMessage from "./ErrorMessage";
+import useAxios from "../hooks/UseAxios";
 
 const User = () => {
+    // // use useFetch start
+    // const {
+    //     data,
+    //     loading,
+    //     error,
+    // } = useFetch(
+    //     "https://jsonplaceholder.typicode.com/posts"
+    // );
+
+    // if (loading) return <Loader />;
+
+    // if (error) {
+    //     return <ErrorMessage message={error} />;
+    // }
+
+    // console.log(data);
+    // use useFetch end
+
+
+
+    // *******************
+    // use axios start
+
 
     const {
         data,
         loading,
         error,
-    } = useFetch(
-        "https://jsonplaceholder.typicode.com/posts"
-    );
+    } = useAxios("/posts");
 
-    if (loading) return <Loader />;
+    if (loading) {
+        return <Loader />;
+    }
 
     if (error) {
         return <ErrorMessage message={error} />;
     }
-
     console.log(data);
 
+    // use axios end
     return (
         <div>
 
